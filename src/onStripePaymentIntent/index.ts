@@ -1,5 +1,6 @@
 import * as yup from 'yup'
 import Stripe from 'stripe'
+import { firestore } from 'firebase-admin'
 import { config } from 'firebase-functions'
 import { sumBy } from 'lodash'
 import { callable } from '@humancollective/cloud-firebase'
@@ -19,7 +20,7 @@ interface OnStripePaymentIntentBody {
 }
 
 interface OnStripePaymentIntentArgs {
-  itemsCollection: FirebaseFirestore.CollectionReference
+  itemsCollection: firestore.CollectionReference
 }
 
 export const onStripePaymentIntent = ({

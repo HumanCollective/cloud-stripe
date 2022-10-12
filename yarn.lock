@@ -1104,10 +1104,10 @@
     protobufjs "^7.0.0"
     yargs "^16.2.0"
 
-"@humancollective/cloud-firebase@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@humancollective/cloud-firebase/-/cloud-firebase-0.4.0.tgz#f77c9dd07b1bba8e8ee0e55d6f55d7bb435bd6fa"
-  integrity sha512-FsEQMZEEPCfAUqLo+zDjYVw//cmqwlgm2H6a40qsEg28TOt1WU4kc1XJ8U398SIE3CFSq7hi9ZgtK3Cf0axoXQ==
+"@humancollective/cloud-firebase@^0.4.3":
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/@humancollective/cloud-firebase/-/cloud-firebase-0.4.3.tgz#6415e82b5e364b28edd46597c948ba4eeb0ceb65"
+  integrity sha512-EA0RU9s3J5vbGN1CxvMtXLOB3Lee7VD8UUfBfQYp4gepdGLVZC8d0CuXl/sAUtKiyfUMXQrcFK7yai7c+9XKpw==
   dependencies:
     uuid "^9.0.0"
     yup "^0.32.11"
@@ -3526,7 +3526,7 @@ expect@^25.5.0:
     jest-message-util "^25.5.0"
     jest-regex-util "^25.2.6"
 
-express@^4.17.1:
+express@^4.17.1, express@^4.18.2:
   version "4.18.2"
   resolved "https://registry.yarnpkg.com/express/-/express-4.18.2.tgz#3fabe08296e930c796c19e3c516979386ba9fd59"
   integrity sha512-5/PsL6iGPdfQ/lKM1UuielYgv3BUoJfz1aUwU9vHZ+J7gyvwdQXFEBIEIaxeGf0GIcreATNyBExtalisDbuMqQ==

@@ -2,7 +2,7 @@ import * as yup from 'yup'
 import Stripe from 'stripe'
 import { config } from 'firebase-functions'
 import { customAlphabet } from 'nanoid'
-import { auth } from 'firebase-admin'
+import { auth, firestore } from 'firebase-admin'
 import { chunk } from 'lodash'
 import { callable } from '@humancollective/cloud-firebase'
 
@@ -21,7 +21,7 @@ interface OnStripeCheckoutBody {
 }
 
 interface OnStripeCheckoutArgs {
-  itemsCollection: FirebaseFirestore.CollectionReference
+  itemsCollection: firestore.CollectionReference
   successUrl: (orderReference: string) => string | string
   cancelUrl: string
 }

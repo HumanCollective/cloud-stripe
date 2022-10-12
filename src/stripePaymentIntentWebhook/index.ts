@@ -16,8 +16,6 @@ export const stripePaymentIntentWebhook = (
 ) =>
   https.onRequest(async (req, res) => {
     try {
-      const firebaseRequest = req as https.Request
-
       if (req.method !== 'POST') {
         throw new Error('webhook called with a method other than POST')
       }
@@ -29,7 +27,7 @@ export const stripePaymentIntentWebhook = (
 
       // validate the webhook
       const event = stripe.webhooks.constructEvent(
-        firebaseRequest.rawBody,
+        req.rawBody,
         stripeSignature,
         endpointSecret,
       )
