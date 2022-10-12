@@ -38,6 +38,8 @@ export interface Checkout {
   items: (Sellable & Quanitifed)[]
   status: CheckoutStatus
   meta?: any
+  dateCreated: Date
+  dateUpdated: Date
 }
 
 export type FirestoreTimestamp = firestore.Timestamp
