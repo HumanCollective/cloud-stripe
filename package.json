@@ -31,7 +31,7 @@
       "pre-commit": "tsdx lint"
     }
   },
-  "name": "cloud-stripe",
+  "name": "@humancollective/cloud-stripe",
   "author": "Human Collective Inc.",
   "module": "dist/cloud-stripe.esm.js",
   "size-limit": [
